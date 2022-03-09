@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="trips_item_text_style">
+        <item name="android:fontFamily">@font/lato_bold</item>
+        <item name="android:textColor">@color/text_color_dark</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+
+    <style name="text_style_lato_900_size_20">
+        <item name="android:fontFamily">@font/lato_black</item>
+        <item name="android:textColor">@color/text_color_dark</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="text_style_lato_700_size_18">
+        <item name="android:fontFamily">@font/lato_bold</item>
+        <item name="android:textColor">@color/text_color_dark</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="text_style_lato_700_size_14">
+        <item name="android:fontFamily">@font/lato_bold</item>
+        <item name="android:textColor">@color/text_color_dark</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+    </style>
+
+    <style name="text_style_lato_700_size_15">
+        <item name="android:fontFamily">@font/lato_bold</item>
+        <item name="android:textColor">@color/text_color_dark</item>
+        <item name="android:textSize">@dimen/text_size_15sp</item>
+    </style>
+
+    <style name="text_style_lato_600_size_14">
+        <item name="android:fontFamily">@font/lato_semibold</item>
+        <item name="android:textColor">@color/text_color_dark_grey2</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+    </style>
+
+    <style name="text_style_lato_600_size_15">
+        <item name="android:fontFamily">@font/lato_semibold</item>
+        <item name="android:textColor">@color/text_color_dark_grey2</item>
+        <item name="android:textSize">@dimen/text_size_15sp</item>
+    </style>
+
+
+    <style name="Widget.MyTaxi.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="colorControlActivated">@color/text_color_dark</item>
+        <item name="colorPrimary">@color/text_color_dark</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+    </style>
+
+</resources>

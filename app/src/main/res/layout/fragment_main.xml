@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/button_nav"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="@dimen/margin_padding_16dp"
+            android:background="?selectableItemBackground"
+            app:cardCornerRadius="22dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_gamburger" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+        
+        
+        <ImageView
+            android:id="@+id/icon_pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_blue_pin"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+
+        <ImageView
+            android:id="@+id/move_my_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_my_location"
+            android:background="?selectableItemBackgroundBorderless"
+            android:layout_marginEnd="@dimen/margin_padding_12dp"
+            android:layout_marginBottom="@dimen/margin_padding_12dp"
+            app:layout_constraintBottom_toTopOf="@id/container_location0"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/container_location0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_bottom_sheet"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="0dp"
+                android:id="@+id/container_location"
+                android:layout_marginHorizontal="@dimen/margin_padding_16dp"
+                android:layout_marginTop="@dimen/margin_padding_16dp"
+                app:cardCornerRadius="@dimen/dimens_12dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:background="@color/light_grey"
+                        android:orientation="horizontal"
+                        android:paddingVertical="@dimen/margin_padding_14dp"
+                        android:paddingHorizontal="@dimen/margin_padding_12dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/dimens_24dp"
+                            android:layout_height="@dimen/dimens_24dp"
+                            android:src="@drawable/ic_light_red_pin"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/origin_name"
+                            style="@style/Widget.MyTaxi.TextInputLayout"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/lato_bold"
+                            android:hint=""
+                            android:paddingVertical="0dp"
+                            android:textColorHint="@color/text_color_hint"
+                            android:textSize="@dimen/text_size_14sp" />
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/divider_color_grey"/>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingVertical="@dimen/margin_padding_14dp"
+                        android:background="@color/stroke_color_grey"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="@dimen/margin_padding_12dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/dimens_24dp"
+                            android:layout_height="@dimen/dimens_24dp"
+                            android:src="@drawable/ic_coordinate"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:tint="@color/blue" />
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            style="@style/Widget.MyTaxi.TextInputLayout"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/lato_bold"
+                            android:hint="Куда?"
+                            android:paddingVertical="0dp"
+                            android:textColorHint="@color/text_color_dark"
+                            android:textSize="@dimen/text_size_14sp" />
+                        
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#CBCBCB"
+                            android:layout_marginVertical="@dimen/margin_padding_2dp"/>
+
+                        <ImageView
+                            android:layout_width="@dimen/dimens_24dp"
+                            android:layout_height="@dimen/dimens_24dp"
+                            android:src="@drawable/ic_icons_right_arrow"
+                            android:layout_marginEnd="@dimen/margin_padding_4dp"
+                            android:layout_marginStart="@dimen/margin_padding_14dp"/>
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

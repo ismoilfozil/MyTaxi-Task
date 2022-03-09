@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MyTaxi Ismoil</string>
+
+    <string name="trips">Мои поездки</string>
+    <string name="payments">"Способы оплаты"</string>
+    <string name="favourite_address">Избранные адреса</string>
+    <string name="help">Помощь</string>
+    <string name="update">Повторить</string>
+    <string name="call">Позвонить</string>
+    <string name="driver">Водитель</string>
+    <string name="rating">Рейтинг:</string>
+    <string name="all_info">Общие данные</string>
+    <string name="cost_calculation">Расчёт стоимости</string>
+    <string name="total">Итого</string>
+    <string name="delete_info">Удалить данные</string>
+
+    <string name="open">Open Drawer Layout</string>
+    <string name="close">Close Drawer Layout</string>
+
+    <!--google map api key-->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCzKyS-OILgrwMh0QbSZgL7fmXclfsYkH4</string>
+
+
+</resources>

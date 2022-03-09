@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.mytaxi_task.ui.main.MainFragment"
+        android:label="MainFragment" />
+    <fragment
+        android:id="@+id/tripsFragment"
+        android:name="com.example.mytaxi_task.ui.trips.main.TripsFragment"
+        android:label="TripsFragment" >
+        <action
+            android:id="@+id/action_tripsFragment_to_tripsInfoFragment"
+            app:destination="@id/tripsInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tripsInfoFragment"
+        android:name="com.example.mytaxi_task.ui.trips.info.TripsInfoFragment"
+        android:label="TripsInfoFragment" >
+        <argument
+            android:name="trip"
+            app:argType="com.example.mytaxi_task.data.model.Trip" />
+    </fragment>
+</navigation>
