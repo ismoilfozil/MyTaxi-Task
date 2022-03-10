@@ -7,7 +7,7 @@ object Constants {
     const val SENSOR = false
     const val UNITS = "metric"
     const val MODE = "driving"
-    const val API_KEY = "AIzaSyCzKyS-OILgrwMh0QbSZgL7fmXclfsYkH4"
+    const val API_KEY = "YOUR_API_KEY"
 
     const val BASE_URL = "https://maps.googleapis.com/maps/api/"
 
